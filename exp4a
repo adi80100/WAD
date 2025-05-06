@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header" data-theme="b">
+            <h1>Adii's Royal Enfied</h1>
+        </div>
+        <div data-role="navbar" data-grid="c">
+            <ul>
+                <li><a href="index.html" class="ui-btn-active">Home</a></li>
+                <li><a href="about_us.html" > About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="register_login.html">Register/Login</a></li>
+            </ul>
+        </div>
+
+        <center>
+                <h3>Products</h3>
+        </center>
+
+        <div class="content">
+            <center>
+                <div class="rows">
+                    <div>
+                        <img src="GT.jpeg" >
+                        <img src="GT.jpeg" >
+                        <img src="GT.jpeg" >
+                    </div>
+                </div>
+                <br>
+                <div class="rows">
+                    <div>
+                        <img src="GT.jpeg" >
+                        <img src="GT.jpeg" >
+                        <img src="GT.jpeg" >
+                    </div>
+                </div>
+                <br>
+                <div class="rows">
+                    <div>
+                        <img src="GT.jpeg" >
+                        <img src="GT.jpeg" >
+                        <img src="GT.jpeg" >
+                    </div>
+                </div>
+
+                
+            </center>
+        </div>
+        <div data-role="footer">
+            
+            <center>
+                <div class="quicklinks">
+                    <h3>quickLinks</h3>
+                    <a href="index.html" >Home</a> <br>
+                    <a href="about_us.html" > About</a><br>
+                    <a href="products.html">Products</a><br>
+                    <a href="register_login.html">Register/Login</a>
+                    
+                </div>
+                <p>CopyRight 2025 | Adii Arts</p>
+            </center>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header" data-theme="b">
+            <h1>Adii's Royal Enfied</h1>
+        </div>
+        <div data-role="navbar" data-grid="c">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about_us.html" > About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="register_login.html" class="ui-btn-active">Register/Login</a></li>
+            </ul>
+        </div>
+
+        <center>
+                <h3>Register</h3>
+        </center>
+
+        <div class="content">
+            
+                
+        
+
+                <label >Email-ID </label>
+                <input type="text">
+
+                <label >Password </label>
+                <input type="password">
+
+                <label >Confirm-Password </label>
+                <input type="password">
+
+                <input type="submit" value="Register" data-theme="b">
+                <center>
+                    <a href="register_login.html">Don't have Account?register</a>
+                </center>
+                
+           
+        </div>
+        <div data-role="footer">
+            
+            <center>
+                <div class="quicklinks">
+                    <h3>quickLinks</h3>
+                    <a href="index.html" >Home</a> <br>
+                    <a href="about_us.html" > About</a><br>
+                    <a href="products.html">Products</a><br>
+                    <a href="register_login.html">Register/Login</a>
+                    
+                </div>
+                <p>CopyRight 2025 | Adii Arts</p>
+            </center>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header" data-theme="b">
+            <h1>Adii's Royal Enfied</h1>
+        </div>
+        <div data-role="navbar" >
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about_us.html" > About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="register_login.html" class="ui-btn-active">Register/Login</a></li>
+            </ul>
+        </div>
+
+        <center>
+                <h3>Register</h3>
+        </center>
+
+        <div class="content">
+            
+                
+                <label >FullName </label>
+                <input type="text">
+
+                <label >Address </label>
+                <textarea cols="25" rows="7"></textarea>
+
+                <label >Date Of Birth </label>
+                <input type="date">
+
+                <label >Email-ID </label>
+                <input type="text">
+
+                <label >Password </label>
+                <input type="password">
+
+                <label >Confirm-Password </label>
+                <input type="password">
+
+                <input type="submit" value="Register" data-theme="b">
+                <center>
+                    <a href="login.html">AlreadyRegistered?login</a>
+                </center>
+                
+           
+        </div>
+        <div data-role="footer">
+            
+            <center>
+                <div class="quicklinks">
+                    <h3>quickLinks</h3>
+                    <a href="index.html" >Home</a> <br>
+                    <a href="about_us.html" > About</a><br>
+                    <a href="products.html">Products</a><br>
+                    <a href="register_login.html">Register/Login</a>
+                    
+                </div>
+                <p>CopyRight 2025 | Adii Arts</p>
+            </center>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
