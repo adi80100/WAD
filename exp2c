@@ -48,3 +48,66 @@ export class AppComponent {
       this.displayEmail = email;
     }
 }
+
+
+
+
+
+<h3>{{ title }}</h3>
+
+<!-- Registration -->
+<h4>Register</h4>
+<input #regName type="text" placeholder="Name">
+<input #regEmail type="text" placeholder="Email">
+<input #regPassword type="password" placeholder="Password">
+<button (click)="register(regName.value, regEmail.value, regPassword.value)">Register</button>
+
+<h4>Display Registered Info</h4>
+<p>Name: {{ displayName }}</p>
+
+<!-- Login -->
+<hr>
+<h4>Login</h4>
+<input #loginEmail type="text" placeholder="Email">
+<input #loginPassword type="password" placeholder="Password">
+<button (click)="login(loginEmail.value, loginPassword.value)">Login</button>
+
+<p>{{ loginMessage }}</p>
+
+
+
+
+
+
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  title = 'My App';
+  displayName = '';
+  loginMessage = '';
+
+  users: any[] = [];
+
+  register(name: string, email: string, password: string) {
+    const user = { name, email, password };
+    this.users.push(user);
+    localStorage.setItem('users', JSON.stringify(this.users));
+    this.displayName = name;
+  }
+
+  login(email: string, password: string) {
+    const storedUsers = JSON.parse(localStorage.getItem('users') || '[]');
+    const found = storedUsers.find((user: any) =>
+      user.email === email && user.password === password
+    );
+    this.loginMessage = found ? `Welcome ${found.name}` : 'Invalid credentials';
+  }
+}
+
